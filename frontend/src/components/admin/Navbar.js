@@ -23,7 +23,7 @@ const Navbar = () => {
         <>
             <div className="navbar">
                 <div className="nav">
-                    <Link to="/home" className="nav__logo">
+                    <Link to="/adminHome" className="nav__logo">
                         <img src={logo} alt="" />
                     </Link>
 
