@@ -17,14 +17,14 @@ const AdminStudentDetails = () => {
     }, [dispatch])
     
     return (
-        <div>
+        <>
             <Navbar />
             {
                 studentDet.map((val) => (
                     <p>{val.username}</p>
                 ))
             }
-        </div>
+        </>
     )
 }
 

@@ -3,12 +3,16 @@ import Navbar from '../components/Navbar/Navbar';
 import { Link } from 'react-router-dom';
 import './css/Home.css';
 import Styled from 'styled-components';
+import BG from './img/bg.jpg';
+import ONE from './img/one.jpg';
+import TWO from './img/two.jpg';
+import THREE from './img/three.jpg';
 
 const Home = () => {
     return (
         <>
             <Navbar />
-            <img src="img/bg1.jpg" alt="" className="header__bg" />
+            <img src={BG} alt="" className="header__bg" />
             <div className="home__card">
                 <div className="home__card_box">
                     <div className="home__card_grid">
@@ -34,7 +38,7 @@ export default Home;
 
 
 const One = Styled.div `
-    background: url('img/one.jpg');
+    background: url(${ONE});
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -76,7 +80,7 @@ const One = Styled.div `
 
 
 const Two = Styled.div `
-    background: url('img/two.jpg');
+    background: url(${TWO});
     border-radius: 10px;
     background-position: center;
     background-size: cover;
@@ -119,7 +123,7 @@ const Two = Styled.div `
 
 
 const Three = Styled.div `
-    background: url('img/three.jpg');
+    background: url(${THREE});
     border-radius: 10px;
     background-position: center;
     background-size: cover;
