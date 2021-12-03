@@ -194,7 +194,7 @@ const useNomination = (nominationValidate) => {
                 axios.post('http://localhost:5000/api/nomination/register', formData)
                 .then(() => {
                     dispatch(nominationRegister(values))
-                    navigate('/nominationList')
+                    navigate('/student/nominationList')
                 })
                 .catch((err) => {
                     console.log(err);

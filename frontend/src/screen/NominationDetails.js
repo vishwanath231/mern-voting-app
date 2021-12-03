@@ -54,9 +54,6 @@ const NominationDetails = () => {
                             <div className="nomination__party_name"><span>Party Name: </span>{party_name}</div>
                         </div>
                     </div>
-                    
-                    
-
                 </div>
             </div>
             

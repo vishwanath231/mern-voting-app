@@ -13,13 +13,13 @@ const Home = () => {
                 <div className="home__card_box">
                     <div className="home__card_grid">
                         <One>
-                            <Link to="/vote" className="page__link">Voting</Link>
+                            <Link to="/student/voteForm" className="page__link">Voting</Link>
                         </One>
                         <Two>
-                            <Link to="/nomination" className="page__link">Nomination Register</Link>
+                            <Link to="/student/nominationForm" className="page__link">Nomination Register</Link>
                         </Two>
                         <Three>
-                            <Link to="/nominationList" className="page__link">Nomination Members</Link>
+                            <Link to="/student/nominationList" className="page__link">Nomination Members</Link>
                         </Three>
                     </div>
                 </div>

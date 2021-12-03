@@ -40,7 +40,7 @@ const NominationList = () => {
                                                 <img src={val.profile} alt="profile" />
                                             </div>
                                             <div className="profile__name">{val.name}</div>
-                                            <Link to={`/nomination/${val.name}/${val._id}`} className="profile__links">view details</Link>
+                                            <Link to={`/student/nomination/${val.name}/${val._id}`} className="profile__links">view details</Link>
                                         </div>
                                     ))
                                 }

@@ -47,7 +47,7 @@ const useFormAdmin = (formValidation) => {
             .then(() => {
 
                 dispatch(adminLogin(values))
-                navigate('/adminHome');
+                navigate('/admin/home');
                 
             })
             .catch((err) => {

@@ -16,7 +16,7 @@ const Navbar = () => {
         <>
             <div className="navbar">
                 <div className="nav">
-                    <Link to="/home" className="nav__logo">
+                    <Link to="/" className="nav__logo">
                         <img src={logo} alt="" />
                     </Link>
 
@@ -35,7 +35,7 @@ const Navbar = () => {
                                 <div className="login__pages_box">
                                     <li>
                                         <ul><Link to="/" className="link">Student</Link></ul>
-                                        <ul><Link to="/adminLogin" className="link">Admin</Link></ul>
+                                        <ul><Link to="/admin/login" className="link">Admin</Link></ul>
                                     </li>
                                 </div>
                             ) : null

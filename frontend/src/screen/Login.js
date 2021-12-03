@@ -65,7 +65,7 @@ const Login = () => {
                     </form>
                     <div className="register__link">
                         You don't have account! &nbsp;
-                        <Link to="/register">SignUp here</Link>
+                        <Link to="/student/register">SignUp here</Link>
                     </div>
                 </div>
             </div>

@@ -49,7 +49,7 @@ const useFormLogin = (formValidation) => {
             .then(() => {
 
                 dispatch(studentLogin(values))
-                navigate('/home');
+                navigate('/student/home');
                 
             })
             .catch((err) => {

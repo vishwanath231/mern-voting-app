@@ -27,14 +27,14 @@ const Navbar = () => {
         <>
             <div className="navbar">
                 <div className="nav">
-                    <Link to="/home" className="nav__logo">
+                    <Link to="/student/home" className="nav__logo">
                         <img src={logo} alt="" />
                     </Link>
 
                     <div className="nav__link">
                         
                         <div>
-                            <Link to="/home" className="home__link">Home</Link>
+                            <Link to="/student/home" className="home__link">Home</Link>
                         </div>
 
                         <div className="pages" onClick={showPages}>
@@ -64,11 +64,10 @@ const Navbar = () => {
                             pages ? (
                                 <div className="pages__box">
                                     <li>
-                                        <ul><Link to="/home" className="link">Home</Link></ul>
-                                        <ul><Link to="/vote" className="link">Voting</Link></ul>
-                                        <ul><Link to="/nomination" className="link">Nomination Register</Link></ul>
-                                        <ul><Link to="/nominationList" className="link">Nomination List</Link></ul>
-                                        <ul><Link to="/" className="link">Admin</Link></ul>
+                                        <ul><Link to="/student/home" className="link">Home</Link></ul>
+                                        <ul><Link to="/student/voteForm" className="link">Voting</Link></ul>
+                                        <ul><Link to="/student/nominationForm" className="link">Nomination Register</Link></ul>
+                                        <ul><Link to="/student/nominationList" className="link">Nomination List</Link></ul>
                                     </li>
                                 </div>
                             ) : null

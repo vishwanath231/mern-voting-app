@@ -1,8 +1,8 @@
 import React from 'react';
-import useFormAdmin from '../hooks/admin/useFormAdmin';
-import LoginValidation from '../hooks/admin/LoginValidation';
-import './css/Form.css';
-import Navbar from '../components/login&register/Navbar';
+import useFormAdmin from '../../hooks/admin/useFormAdmin';
+import LoginValidation from '../../hooks/admin/LoginValidation';
+import '../css/Form.css';
+import Navbar from '../../components/login&register/Navbar';
 
 const AdminLogin = () => {
 

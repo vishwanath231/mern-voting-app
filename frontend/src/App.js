@@ -8,8 +8,11 @@ import NominationForm from './screen/NominationForm';
 import NominationList from './screen/NominationList';
 import NominationDetails from './screen/NominationDetails';
 import VoteForm from './screen/VoteForm';
-import AdminLogin from './screen/AdminLogin';
-import AdminHome from './screen/AdminHome';
+import AdminLogin from './screen/admin/AdminLogin';
+import AdminHome from './screen/admin/AdminHome';
+import AdminStudentDetails from './screen/admin/AdminStudentDetails';
+import AdminNominationDetails from './screen/admin/AdminNominationDetails';
+import AdminVotingDetails from './screen/admin/AdminVotingDetails';
 
 const App = () => {
     return (
@@ -17,14 +20,20 @@ const App = () => {
             <BrowserRouter>
                 <Routes>
                     <Route path="/"  element={<Login />} />
-                    <Route path="/register"  element={<Register />} />
-                    <Route path="/home"  element={<Home />} />
-                    <Route path="/nomination" element={<NominationForm />} />
-                    <Route path="/nominationList" element={<NominationList />} />
-                    <Route path="/nomination/:name/:id" element={<NominationDetails />}  />
-                    <Route path="/vote" element={<VoteForm />} />
-                    <Route path="/adminLogin" element={<AdminLogin />} />
-                    <Route path="/adminHome"  element={<AdminHome />} />
+                    <Route path="/student/register"  element={<Register />} />
+                    <Route path="/student/home"  element={<Home />} />
+                    <Route path="/student/nominationForm" element={<NominationForm />} />
+                    <Route path="/student/nominationList" element={<NominationList />} />
+                    <Route path="/student/nomination/:name/:id" element={<NominationDetails />}  />
+                    <Route path="/student/voteForm" element={<VoteForm />} />
+
+
+                    <Route path="/admin/login" element={<AdminLogin />} />
+                    <Route path="/admin/home"  element={<AdminHome />} />
+                    <Route path="/admin/studentDetails" element={<AdminStudentDetails />} />
+                    <Route path="/admin/nominationDetails" element={<AdminNominationDetails />} />
+                    <Route path="/admin/votingDetails" element={<AdminVotingDetails />} />
+
                 </Routes>
             </BrowserRouter>
         </>
