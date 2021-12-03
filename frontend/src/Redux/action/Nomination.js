@@ -1,7 +1,8 @@
 import { 
     NOMINATION_REGISTER,
     NOMINATION_LIST,
-    NOMINATION_DETAILS 
+    NOMINATION_DETAILS,
+    NOMINATION_LENGTH 
 } from '../constant/Constant';
 import axios from 'axios';
 
@@ -39,6 +40,24 @@ export const nominationDetails = (id) => {
                 payload: val.data.data
             })
         }).catch((err)=> {
+            console.log(err);
+        })
+    }
+}
+
+
+
+export const nominationLength = () => {
+
+    return (dispatch) => {
+        axios.get('http://localhost:5000/api/nomination/list')
+        .then((val) => {
+            dispatch({
+                type: NOMINATION_LENGTH,
+                payload: val.data.data
+            })
+        })
+        .catch((err)=> {
             console.log(err);
         })
     }

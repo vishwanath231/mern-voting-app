@@ -123,7 +123,7 @@ const studentLogin = async (req, res, next) => {
 
 
 
-const studentDetails = async(req, res) => {
+const studentDetails = async (req, res) => {
 
     try {
 
@@ -152,4 +152,28 @@ const studentDetails = async(req, res) => {
     }
 }
 
-export { studentRegister, studentLogin, studentDetails };
+
+const allStudentDetails = async (req, res) => {
+
+    try {
+
+        const details = await Student.find()
+
+        return res.status(200).json({
+            success: true,
+            count: details.length,
+            data: details
+        });
+
+        
+    } catch (err) {
+        
+        return res.status(500).json({
+            success: false,
+            msg: "server Error"
+        }) 
+    }
+    
+}
+
+export { studentRegister, studentLogin, studentDetails, allStudentDetails };

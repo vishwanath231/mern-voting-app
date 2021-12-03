@@ -1,13 +1,17 @@
 import { combineReducers } from 'redux';
-import { studentRegisterReducer, studentLoginReducer } from './studentReducer';
-import { nominationReducer, nominationDetailsReducer } from './nominationReducer';
+import { 
+    studentReducer, 
+    studentLoginReducer 
+} from './studentReducer';
+import { 
+    nominationReducer, 
+} from './nominationReducer';
 import { adminLoginReducer } from './adminReducer';
 
 
 export const reducer = combineReducers({
-    studentRegister: studentRegisterReducer,
+    student: studentReducer,
     studentLogin: studentLoginReducer,
     nomination: nominationReducer,
-    nominationDetail: nominationDetailsReducer,
-    adminLogin: adminLoginReducer
+    adminLogin: adminLoginReducer,
 })

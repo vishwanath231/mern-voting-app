@@ -4,7 +4,8 @@ const router = express.Router();
 import { 
     studentRegister, 
     studentLogin, 
-    studentDetails
+    studentDetails,
+    allStudentDetails
 } from '../controller/StudentController.js';
 
 
@@ -24,6 +25,9 @@ router
 .get(studentDetails)
 
 
+router
+.route('/all/details')
+.get(allStudentDetails)
 
 
 

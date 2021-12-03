@@ -18,6 +18,7 @@ const NominationList = () => {
         
     }, [dispatch])
     
+    console.log(nomination);
 
     return (
 

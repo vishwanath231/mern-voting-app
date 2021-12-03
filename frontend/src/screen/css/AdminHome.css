@@ -1,0 +1,97 @@
+.admin__home {
+    max-width: 1220px;
+    margin: 3rem auto 1rem auto;
+    padding: 0 10px;
+}
+
+.admin__home_box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10em;
+}
+
+.admin__home_student,
+.admin__home_nomination,
+.admin__home_voting {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: rgba(199, 199, 199, 0.3) 0px 1px 2px 0px,
+    rgba(199, 199, 199, 0.3) 0px 1px 3px 1px;
+    text-decoration: none;
+}
+.admin__student_icon,
+.admin__nomination_icon,
+.admin__voting_icon {
+    padding: .5rem;
+    border-radius: 6px;
+}
+.admin__student_icon{
+background: hsla(29, 92%, 70%, 1);
+
+background: linear-gradient(90deg, hsla(29, 92%, 70%, 1) 0%, hsla(0, 87%, 73%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(29, 92%, 70%, 1) 0%, hsla(0, 87%, 73%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(29, 92%, 70%, 1) 0%, hsla(0, 87%, 73%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#F9B16E", endColorstr="#F68080", GradientType=1);
+}
+
+.admin__nomination_icon{
+
+    background: hsla(177, 87%, 79%, 1);
+
+    background: linear-gradient(90deg, hsla(177, 87%, 79%, 1) 0%, hsla(235, 89%, 70%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(177, 87%, 79%, 1) 0%, hsla(235, 89%, 70%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(177, 87%, 79%, 1) 0%, hsla(235, 89%, 70%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#9BF8F4", endColorstr="#6F7BF7", GradientType=1);
+}
+
+.admin__voting_icon{
+   
+    background: hsla(302, 82%, 76%, 1);
+
+    background: linear-gradient(90deg, hsla(302, 82%, 76%, 1) 0%, hsla(258, 40%, 68%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(302, 82%, 76%, 1) 0%, hsla(258, 40%, 68%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(302, 82%, 76%, 1) 0%, hsla(258, 40%, 68%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#F492F0", endColorstr="#A18DCE", GradientType=1);
+}
+
+
+.admin__home_inner_box {
+    display: flex;
+    flex-direction: column;
+    font-family: 'sen',sans-serif;
+    margin-left: 1.5rem;
+}
+
+.admin__home_inner_box h2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+}
+
+.admin__home_inner_box h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+}
+
+
+.admin__student_icon img,
+.admin__nomination_icon img,
+.admin__voting_icon img {
+    width: 50px;
+}
