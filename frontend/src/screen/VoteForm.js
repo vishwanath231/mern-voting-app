@@ -2,6 +2,7 @@ import React,{ useState, useEffect } from 'react'
 import Navbar from '../components/Navbar/Navbar';
 import { useDispatch ,useSelector } from 'react-redux';
 import { nominationList } from '../Redux/action/Nomination';
+import axios from 'axios';
 
 const VoteForm = () => {
     
@@ -24,6 +25,16 @@ const VoteForm = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
 
+        const emailVal = document.getElementById('email').value;
+        const registerVal = document.getElementById('register_no').value;
+
+
+        const values = {
+            register_no: registerVal,
+            email: emailVal,
+            voted: selected
+        } 
+        console.log(values);
         
     }
 
@@ -60,7 +71,7 @@ const VoteForm = () => {
                     </div>
                     <div className="vote__div">
                         <label htmlFor="vote_name" className="vote__label">Vote Name</label>
-                        <select name="vote" >
+                        <select name="vote" onChange={e => setSelected(e.target.value)}>
                             <option value="">select vote</option>
                             {nomination.map((val) => (
                                 <option value={val.party_name} key={val._id}>{val.party_name}</option>

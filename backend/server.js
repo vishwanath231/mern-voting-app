@@ -5,6 +5,7 @@ import dotenv from 'dotenv';
 import studentRouter from './routes/studentRouter.js'
 import nominationRouter from './routes/nominationRouter.js'
 import adminRouter from './routes/adminRouter.js';
+import voteRouter from './routes/voteRouter.js'
 import connectDB from './database/db.js'
 
 dotenv.config({ path: 'backend/config/config.env' })
@@ -22,6 +23,7 @@ app.use(express.json());
 app.use('/api/student', studentRouter)
 app.use('/api/nomination', nominationRouter)
 app.use('/api/admin', adminRouter)
+app.use('/api/vote', voteRouter)
 
 
 //port
