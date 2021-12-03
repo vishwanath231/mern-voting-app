@@ -1,0 +1,116 @@
+.nomination__title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.nomination {
+    margin: 1rem auto;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.nomination__box {
+    background-color: #fff;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    border-radius: 6px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.nomination__box .progress__bar {
+    width: 100%;
+    height: 3px;
+    margin-bottom: 1.5rem;
+}
+
+.progress__bar .bar {
+    width: 0%;
+    background-color: crimson;
+    height: 3px;
+}
+
+.nomination__profile,
+.nomination__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nomination__logo img{
+    width: 150px;
+    object-fit: contain;
+}
+
+.nomination__profile img {
+    border-radius: 50%;
+}
+.nomination__input_box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.nomination__label{
+    font-size: .9rem;
+    font-weight: 500;
+    margin-bottom: .3rem;
+}
+.nomination__input {
+    padding: .8rem;
+    font-size: .9rem;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    outline-color: cornflowerblue;
+    font-weight: 500;
+    font-family: 'Sen',
+    sans-serif;
+}
+
+.next__btn,
+.prev__btn,
+.first_nxtBtn {
+    width: 100%;
+    margin: 1rem 0 0 0;
+    padding: .8rem;
+    border-radius: 3px;
+    border: none;
+    background: cornflowerblue;
+    color: #000;
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 500;
+    font-family: 'Sen',
+    sans-serif;
+    cursor: pointer;
+}
+.prev__btn {
+    background-color: coral;
+}
+.first_nxtBtn {
+    width: 100%;
+}
+
+
+@media(min-width:500px){
+    .next__btn,
+    .prev__btn{
+        width: 48%;
+        margin: 1.3rem 0 1.3rem .5rem;
+    }
+    .prev__btn {
+        margin: 1.3rem .5rem 1.3rem 0;
+    }
+}
+
+@media(min-width:768px) {
+
+    .nomination__box {
+        width: 450px;
+    }
+}

@@ -1,0 +1,94 @@
+.nomination__details_title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1rem 0 1.5rem 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.nomination__details_card {
+    margin: 1rem 0;
+}
+.nomination__details_box {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.nomination__details_grid {
+    display: grid;
+    grid-gap: 2em;
+}
+
+@media(min-width:920px) {
+    .nomination__details_grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.nomination__person_details,
+.nomination__college_details,
+.nomination__details {
+    border-radius: 6px;
+    padding: 1rem;
+    box-shadow: rgba(199, 199, 199, 0.3) 0px 1px 2px 0px,
+    rgba(199, 199, 199, 0.3) 0px 1px 3px 1px;
+}
+.noimation_profile,
+.noimation_logo {
+    text-align: center;
+}
+
+.noimation_profile p,
+.noimation_logo p {
+    font-size: .9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: .8rem;
+}
+
+
+.noimation_profile img,
+.noimation_logo img {
+    width: 120px;
+    border-radius: 50%;
+}
+
+.header__title {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #34518D;
+}
+
+.nomination__name span,
+.nomination__email span,
+.nomination__dob span,
+.nomination__mobile span,
+.nomination__register span,
+.nomination__dept span,
+.nomination__party_name span{
+    font-size: 1rem;
+    font-weight: 600;
+    color: gray;
+    text-transform: capitalize;
+}
+
+.nomination__name,
+.nomination__email,
+.nomination__dob,
+.nomination__mobile,
+.nomination__register,
+.nomination__dept,
+.nomination__party_name {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: justify;
+}
+
+.nomination__register,
+.nomination__dept{
+    text-transform: uppercase;
+}

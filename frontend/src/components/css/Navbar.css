@@ -1,0 +1,119 @@
+.navbar {
+    width: 100%;
+    background-color: #fff;
+    padding: .5rem;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.nav__logo {
+    width: 90px;
+}
+
+.nav__logo img {
+    width: 100%;
+}
+
+.nav__link {
+    display: flex;
+    align-items: center;
+}
+
+
+.home__link {
+    text-decoration: none;
+    font-size: .9rem;
+    font-weight: 600;
+    color: #000;
+    text-transform: uppercase;
+}
+.profile,
+.pages {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: .9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.pages {
+    margin: 0 1rem 0 1.5rem;
+}
+.icon {
+    color: #34518D;
+}
+
+.nav .pages__box,
+.login__pages_box {
+    position: absolute;
+    background: #34518D;
+    right: 60px;
+    top: 55px;
+    border-radius: 6px;
+    font-family: 'sen',sans-serif;
+    width: auto;
+    height: auto;
+    padding: 1rem;
+    z-index: 2;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.login__pages_box {
+    right: 0px;
+    top: 55px;
+}
+.pages__box li,
+.login__pages_box li {
+    list-style: none;
+}
+.pages__box li ul,
+.login__pages_box li ul {
+    margin-bottom: .8rem;
+}
+.pages__box li ul .link,
+.login__pages_box li ul .link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.pages__box li ul .link:hover,
+.login__pages_box li ul .link:hover {
+    color: coral;
+}
+
+.nav .s__profile_box {
+    position: absolute;
+    background: #34518D;
+    right: 0;
+    top: 55px;
+    border-radius: 6px;
+    font-family: 'sen',sans-serif;
+    width: auto;
+    height: auto;
+    z-index: 2;
+    padding: 1rem;
+    box-shadow: rgba(134, 167, 199, 0.2) 0px 8px 24px;
+}
+
+.s__email {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: .5rem;
+    color: #fff;
+}
+
+.logout{
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    color: crimson;
+    text-decoration: none;
+}
+
