@@ -8,6 +8,7 @@ import '../css/AdminHome.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { nominationLength } from '../../Redux/action/Nomination';
 import { studentLength } from '../../Redux/action/Student';
+import { voteLength } from '../../Redux/action/Vote';
 
 const AdminHome = () => {
 
@@ -15,14 +16,17 @@ const AdminHome = () => {
 
     const nominationLen = useSelector(state => state.nomination.nominations)
     const studentLen = useSelector(state => state.student.students)
+    const voteLen = useSelector(state => state.voted.votes)
 
 
     useEffect(() => {
 
         dispatch(nominationLength())
         dispatch(studentLength())
+        dispatch(voteLength())
 
     }, [dispatch])
+
 
 
     return (
@@ -54,7 +58,7 @@ const AdminHome = () => {
                         </div>
                         <div className="admin__home_inner_box">
                             <h2>vote</h2>
-                            <h3>3</h3>
+                            <h3>{voteLen.length}</h3>
                         </div>
                     </Link> 
                 </div>

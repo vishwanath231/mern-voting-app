@@ -15,7 +15,7 @@ const voteRegister = (req, res) => {
                     res.status(400).json({
                         success: false,
                         register_no: `${register_no}`,
-                        registerErr: `Register number already exists`
+                        registerErr: `Register number already exists, you already voted!`
                     })
 
                 }else if(isCheck) {
@@ -23,7 +23,7 @@ const voteRegister = (req, res) => {
                     res.status(400).json({
                         success: false,
                         email: `${email}`,
-                        emailErr: `Email already exists`
+                        emailErr: `Email already exists, you already voted!`
                     })
 
                 }else {
