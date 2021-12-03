@@ -30,7 +30,7 @@ const Navbar = () => {
                     <div className="nav__link">
                         
                         <div>
-                            <Link to="/home" className="home__link">Home</Link>
+                            <Link to="/adminHome" className="home__link">Home</Link>
                         </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
                         <div className="profile" onClick={showProfile}>
