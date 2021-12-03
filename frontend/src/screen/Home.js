@@ -17,10 +17,10 @@ const Home = () => {
                 <div className="home__card_box">
                     <div className="home__card_grid">
                         <One>
-                            <Link to="/student/voteForm" className="page__link">Voting</Link>
+                            <Link to="/student/voteForm" className="page__link">Vote Form</Link>
                         </One>
                         <Two>
-                            <Link to="/student/nominationForm" className="page__link">Nomination Register</Link>
+                            <Link to="/student/nominationForm" className="page__link">Nomination Form</Link>
                         </Two>
                         <Three>
                             <Link to="/student/nominationList" className="page__link">Nomination Members</Link>

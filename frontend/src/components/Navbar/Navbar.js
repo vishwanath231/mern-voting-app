@@ -65,8 +65,8 @@ const Navbar = () => {
                                 <div className="pages__box">
                                     <li>
                                         <ul><Link to="/student/home" className="link">Home</Link></ul>
-                                        <ul><Link to="/student/voteForm" className="link">Voting</Link></ul>
-                                        <ul><Link to="/student/nominationForm" className="link">Nomination Register</Link></ul>
+                                        <ul><Link to="/student/voteForm" className="link">Vote Form</Link></ul>
+                                        <ul><Link to="/student/nominationForm" className="link">Nomination Form</Link></ul>
                                         <ul><Link to="/student/nominationList" className="link">Nomination List</Link></ul>
                                     </li>
                                 </div>
