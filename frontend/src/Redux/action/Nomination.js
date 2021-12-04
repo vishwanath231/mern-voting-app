@@ -2,7 +2,6 @@ import {
     NOMINATION_REGISTER,
     NOMINATION_LIST,
     NOMINATION_DETAILS,
-    ADMIN_NOMINATION_DETAILS,
     NOMINATION_LENGTH 
 } from '../constant/Constant';
 import axios from 'axios';
