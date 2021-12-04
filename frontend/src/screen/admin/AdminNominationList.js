@@ -1,12 +1,13 @@
 import React,{ useEffect } from 'react';
-import Navbar from '../components/Navbar/Navbar';
+import Navbar from '../../components/admin/Navbar';
+import '../css/NominationList.css';
 import { useDispatch ,useSelector } from 'react-redux';
-import { nominationList } from '../Redux/action/Nomination';
-import './css/NominationList.css';
+import { nominationList } from '../../Redux/action/Nomination';
 import { Link } from 'react-router-dom';
-import spinner  from './img/spinner.gif'
+import spinner  from '../img/spinner.gif'
 
-const NominationList = () => {
+const AdminNominationList = () => {
+
 
     const nomination = useSelector(state => state.nomination.nominations)
 
@@ -17,10 +18,8 @@ const NominationList = () => {
         dispatch(nominationList())
         
     }, [dispatch])
-    
 
     return (
-
         <>
             <Navbar />
             {
@@ -40,7 +39,7 @@ const NominationList = () => {
                                                 <img src={val.profile} alt="profile" />
                                             </div>
                                             <div className="profile__name">{val.name}</div>
-                                            <Link to={`/student/nomination/${val.name}/${val._id}`} className="profile__links">view details</Link>
+                                            <Link to={`/admin/nominationDetails/${val.name}/${val._id}`} className="profile__links">view details</Link>
                                         </div>
                                     ))
                                 }
@@ -53,4 +52,4 @@ const NominationList = () => {
     )
 }
 
-export default NominationList;
+export default AdminNominationList;

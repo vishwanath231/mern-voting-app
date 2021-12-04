@@ -4,7 +4,8 @@ import {
     studentLoginReducer 
 } from './studentReducer';
 import { 
-    nominationReducer, 
+    nominationReducer,
+    nominationDetailsReducer 
 } from './nominationReducer';
 import { adminLoginReducer } from './adminReducer';
 import { voteReducer } from './voteReducer';
@@ -15,5 +16,6 @@ export const reducer = combineReducers({
     studentLogin: studentLoginReducer,
     nomination: nominationReducer,
     adminLogin: adminLoginReducer,
-    voted: voteReducer
+    voted: voteReducer,
+    nominationDetail: nominationDetailsReducer
 })

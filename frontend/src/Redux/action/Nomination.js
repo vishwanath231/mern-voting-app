@@ -2,6 +2,7 @@ import {
     NOMINATION_REGISTER,
     NOMINATION_LIST,
     NOMINATION_DETAILS,
+    ADMIN_NOMINATION_DETAILS,
     NOMINATION_LENGTH 
 } from '../constant/Constant';
 import axios from 'axios';
@@ -37,13 +38,16 @@ export const nominationDetails = (id) => {
         .then((val) => {
             dispatch({
                 type: NOMINATION_DETAILS,
-                payload: val.data.data
+                payload: [val.data.data]
             })
+
         }).catch((err)=> {
             console.log(err);
         })
     }
 }
+
+
 
 
 

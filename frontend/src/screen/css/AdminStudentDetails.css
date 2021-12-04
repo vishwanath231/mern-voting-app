@@ -1,0 +1,88 @@
+
+.student__details_container {
+    max-width: 1220px;
+    margin: 2rem auto 1rem auto;
+    padding: 0 10px;
+}
+
+.search__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.search__input{
+
+    width: 100%;
+    border: none;
+    outline-color:cornflowerblue;
+    padding: .8rem;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Sen',sans-serif;
+    border-radius: 3px;
+}
+
+@media(min-width:768px){
+    .search__input{
+        width: 300px;
+    }
+}
+
+.student__details_box {
+    display: grid;
+    grid-gap: 2em;
+}
+
+.student__details {
+    background-color: #fff;
+    padding: .8rem;
+    border-radius: 3px;
+    box-shadow: rgba(199, 199, 199, 0.3) 0px 1px 2px 0px,
+    rgba(199, 199, 199, 0.3) 0px 1px 3px 1px;
+}
+
+.student__register,
+.student__name,
+.student__email {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #34518D;
+}
+
+.student__name{
+    margin: .2rem 0;
+}
+
+.student__register span,
+.student__name span,
+.student__email span {
+    font-weight: 600;
+    color: #000;
+}
+
+
+.student__details_box_f{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(min-width:1025px) {
+    .student__details_box {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(max-width:1025px) {
+    .student__details_box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:700px) {
+    .student__details_box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

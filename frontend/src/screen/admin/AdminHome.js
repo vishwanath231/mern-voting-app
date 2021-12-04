@@ -43,7 +43,7 @@ const AdminHome = () => {
                             <h3>{studentLen.length}</h3>
                         </div>
                     </Link> 
-                    <Link to="/admin/nominationDetails" className="admin__home_nomination">
+                    <Link to="/admin/nominationList" className="admin__home_nomination">
                         <div className="admin__nomination_icon">
                             <img src={NOMINATION} alt="" />
                         </div>

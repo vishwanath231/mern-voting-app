@@ -11,6 +11,7 @@ import VoteForm from './screen/VoteForm';
 import AdminLogin from './screen/admin/AdminLogin';
 import AdminHome from './screen/admin/AdminHome';
 import AdminStudentDetails from './screen/admin/AdminStudentDetails';
+import AdminNominationList from './screen/admin/AdminNominationList';
 import AdminNominationDetails from './screen/admin/AdminNominationDetails';
 import AdminVotingDetails from './screen/admin/AdminVotingDetails';
 
@@ -31,7 +32,8 @@ const App = () => {
                     <Route path="/admin/login" element={<AdminLogin />} />
                     <Route path="/admin/home"  element={<AdminHome />} />
                     <Route path="/admin/studentDetails" element={<AdminStudentDetails />} />
-                    <Route path="/admin/nominationDetails" element={<AdminNominationDetails />} />
+                    <Route path="/admin/nominationList" element={<AdminNominationList />} />
+                    <Route path="/admin/nominationDetails/:name/:id" element={<AdminNominationDetails />} />
                     <Route path="/admin/votingDetails" element={<AdminVotingDetails />} />
 
                 </Routes>
