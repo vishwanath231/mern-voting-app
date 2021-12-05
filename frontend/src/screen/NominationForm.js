@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../components/Navbar/Navbar';
+import Navbar from '../components/admin/Navbar';
 import Placeholder from './img/Placeholder.png';
 import useNomination from '../hooks/Nomination/useNomination';
 import nominationValidate from '../hooks/Nomination/nominationValidate';
@@ -15,7 +15,7 @@ const NominationForm = () => {
         <>
             <Navbar />
 
-                    <div className="nomination__title">Nomination Form</div>
+            <div className="nomination__title">Nomination Form</div>
             <div className="nomination">
                 <div className="nomination__box">
                     <div className="progress__bar">

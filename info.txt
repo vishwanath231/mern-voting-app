@@ -6,12 +6,6 @@ register no: 21CSEA77
 email: vishwanathvishwabai@gmail.com
 password: Vishwa@2001
 
-----------------------------------------
-register no: 21CSEA76
-email: venkat@gmail.com
-password: Venkat@2000
-
-
 ------------ ADMIN--------------- 
 
 email: admin@gmail.com

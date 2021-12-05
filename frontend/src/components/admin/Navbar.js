@@ -63,6 +63,7 @@ const Navbar = () => {
                                 <div className="pages__box">
                                     <li>
                                         <ul><Link to="/admin/home" className="link">Home</Link></ul>
+                                        <ul><Link to="/admin/nominationForm" className="link">Nomination Form</Link></ul>
                                         <ul><Link to="/admin/studentDetails" className="link">Student Details</Link></ul>
                                         <ul><Link to="/admin/nominationList" className="link">Nomination List</Link></ul>
                                         <ul><Link to="/admin/votingDetails" className="link">Voting Details</Link></ul>

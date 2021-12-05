@@ -23,7 +23,6 @@ const App = () => {
                     <Route path="/"  element={<Login />} />
                     <Route path="/student/register"  element={<Register />} />
                     <Route path="/student/home"  element={<Home />} />
-                    <Route path="/student/nominationForm" element={<NominationForm />} />
                     <Route path="/student/nominationList" element={<NominationList />} />
                     <Route path="/student/nomination/:name/:id" element={<NominationDetails />}  />
                     <Route path="/student/voteForm" element={<VoteForm />} />
@@ -32,6 +31,7 @@ const App = () => {
                     <Route path="/admin/login" element={<AdminLogin />} />
                     <Route path="/admin/home"  element={<AdminHome />} />
                     <Route path="/admin/studentDetails" element={<AdminStudentDetails />} />
+                    <Route path="/admin/nominationForm" element={<NominationForm />} />
                     <Route path="/admin/nominationList" element={<AdminNominationList />} />
                     <Route path="/admin/nominationDetails/:name/:id" element={<AdminNominationDetails />} />
                     <Route path="/admin/votingDetails" element={<AdminVotingDetails />} />

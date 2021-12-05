@@ -5,7 +5,6 @@ import './css/Home.css';
 import Styled from 'styled-components';
 import BG from './img/bg.jpg';
 import ONE from './img/one.jpg';
-import TWO from './img/two.jpg';
 import THREE from './img/three.jpg';
 
 const Home = () => {
@@ -19,9 +18,6 @@ const Home = () => {
                         <One>
                             <Link to="/student/voteForm" className="page__link">Vote Form</Link>
                         </One>
-                        <Two>
-                            <Link to="/student/nominationForm" className="page__link">Nomination Form</Link>
-                        </Two>
                         <Three>
                             <Link to="/student/nominationList" className="page__link">Nomination Members</Link>
                         </Three>
@@ -77,48 +73,6 @@ const One = Styled.div `
     }
 `;
 
-
-
-const Two = Styled.div `
-    background: url(${TWO});
-    border-radius: 10px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    height:200px;  
-    width:100%;
-    position: relative;
-    z-index: 1;
-
-
-
-    &::before{
-        position: absolute;
-        content: '';
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        border-radius: 10px;
-        background: rgba(0,0,0,0.6);
-        z-index: -1;
-    }
-
-    .page__link {
-        position: absolute;
-        top:50%;
-        left:50%;
-        transform: translate(-50%,-50%);
-       background: #1d3557;
-        color: #fff;
-        padding: .8rem;
-        font-size: 1rem;
-        font-weight: 600;
-        border-radius: 3px;
-        text-decoration: none;
-    }
-`;
 
 
 
