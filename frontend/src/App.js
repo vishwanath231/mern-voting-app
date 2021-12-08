@@ -35,7 +35,6 @@ const App = () => {
                     <Route path="/admin/nominationList" element={<AdminNominationList />} />
                     <Route path="/admin/nominationDetails/:name/:id" element={<AdminNominationDetails />} />
                     <Route path="/admin/votingDetails" element={<AdminVotingDetails />} />
-
                 </Routes>
             </BrowserRouter>
         </>

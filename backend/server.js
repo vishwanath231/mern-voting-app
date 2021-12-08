@@ -2,6 +2,7 @@ import express from 'express';
 import color from 'colors';
 import cors from 'cors';
 import dotenv from 'dotenv';
+import path from 'path';
 import studentRouter from './routes/studentRouter.js'
 import nominationRouter from './routes/nominationRouter.js'
 import adminRouter from './routes/adminRouter.js';
@@ -24,6 +25,23 @@ app.use('/api/student', studentRouter)
 app.use('/api/nomination', nominationRouter)
 app.use('/api/admin', adminRouter)
 app.use('/api/vote', voteRouter)
+
+
+// Heroku 
+if (process.env.NODE_ENV === "production") {
+    
+    app.use(express.static(path.join(__dirname, '/../frontend/build')));
+
+    app.get('*', (req, res) => {
+        res.sendFile(path.resolve(__dirname, '/../frontend', 'build', 'index.html'))
+    })
+
+} else {
+    
+    app.get('/', (req, res) => {
+        res.send("API is running.....")
+    })
+}
 
 
 //port
