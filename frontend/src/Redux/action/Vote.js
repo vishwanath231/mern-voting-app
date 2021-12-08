@@ -17,7 +17,7 @@ export const voteRegister = (data) => {
 export const voteList = () => {
 
     return (dispatch) => {
-        axios.get('http://localhost:5000/api/vote/voteDetails')
+        axios.get('/api/vote/voteDetails')
         .then((val) => {
             dispatch({
                 type: VOTE_LIST,
@@ -34,7 +34,7 @@ export const voteList = () => {
 export const voteLength = () => {
 
     return (dispatch) => {
-        axios.get('http://localhost:5000/api/vote/voteDetails')
+        axios.get('/api/vote/voteDetails')
         .then((val) => {
             dispatch({
                 type: VOTED_LENGTH,

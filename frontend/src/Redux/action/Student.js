@@ -31,7 +31,7 @@ export const studentLogin = (data) => {
 export const studentDetails = () => {
 
     return (dispatch) => {
-        axios.get('http://localhost:5000/api/student/all/details')
+        axios.get('/api/student/all/details')
         .then((val) => {
             dispatch({
                 type: STUDENT_DETAILS,
@@ -48,7 +48,7 @@ export const studentDetails = () => {
 export const studentLength = () => {
 
     return (dispatch) => {
-        axios.get('http://localhost:5000/api/student/all/details')
+        axios.get('/api/student/all/details')
         .then((val) => {
             dispatch({
                 type: STUDENT_LENGTH,

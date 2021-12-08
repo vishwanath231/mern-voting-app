@@ -52,7 +52,7 @@ const useVoteForm = () => {
 
         }else {
 
-            axios.post('http://localhost:5000/api/vote/newVote', values)
+            axios.post('/api/vote/newVote', values)
             .then(() => {
 
                 setSuccess("Voted successfull");

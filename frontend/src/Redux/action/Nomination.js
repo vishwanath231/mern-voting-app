@@ -17,7 +17,7 @@ export const nominationRegister = (data) => {
 export const nominationList = () => {
 
     return (dispatch) => {
-        axios.get('http://localhost:5000/api/nomination/list')
+        axios.get('/api/nomination/list')
         .then((val) => {
             dispatch({
                 type: NOMINATION_LIST,
@@ -33,7 +33,7 @@ export const nominationList = () => {
 export const nominationDetails = (id) => {
  
     return (dispatch) => {
-        axios.get(`http://localhost:5000/api/nomination/details/${id}`)
+        axios.get(`/api/nomination/details/${id}`)
         .then((val) => {
             dispatch({
                 type: NOMINATION_DETAILS,
@@ -53,7 +53,7 @@ export const nominationDetails = (id) => {
 export const nominationLength = () => {
 
     return (dispatch) => {
-        axios.get('http://localhost:5000/api/nomination/list')
+        axios.get('/api/nomination/list')
         .then((val) => {
             dispatch({
                 type: NOMINATION_LENGTH,

@@ -45,7 +45,7 @@ const useFormRegister = (formValidation) => {
 
         if (Object.keys(errors).length === 0 && isSubmitting) {
 
-            axios.post('http://localhost:5000/api/student/register', values)
+            axios.post('/api/student/register', values)
             .then(() => {
 
                 dispatch(studentRegister(values))

@@ -45,7 +45,7 @@ const useFormLogin = (formValidation) => {
 
         if (Object.keys(errors).length === 0 && isSubmitting) {
             
-            axios.post('http://localhost:5000/api/student/login', values)
+            axios.post('/api/student/login', values)
             .then(() => {
 
                 dispatch(studentLogin(values))

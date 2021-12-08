@@ -191,7 +191,7 @@ const useNomination = (nominationValidate) => {
                 formData.append('party_name', values.party_name);
                      
                 
-                axios.post('http://localhost:5000/api/nomination/register', formData)
+                axios.post('/api/nomination/register', formData)
                 .then(() => {
                     dispatch(nominationRegister(values))
                     navigate('/admin/nominationList')

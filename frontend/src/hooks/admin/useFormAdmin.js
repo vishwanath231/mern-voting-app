@@ -43,7 +43,7 @@ const useFormAdmin = (formValidation) => {
 
         if (Object.keys(errors).length === 0 && isSubmitting) {
             
-            axios.post('http://localhost:5000/api/admin/login', values)
+            axios.post('/api/admin/login', values)
             .then(() => {
 
                 dispatch(adminLogin(values))
